@@ -11,6 +11,7 @@
 	},
 	"require": {
 		"helhum/typo3-console": "^7.0.2",
+		"pixelant/pxa-lpeh": "^1.1",
 		"platformsh/config-reader": "^2.4",
 		"typo3/cms-backend": "^11.5.0",
 		"typo3/cms-belog": "^11.5.0",

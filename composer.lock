@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7b8351c908f3d4d14367b0564d7c97a7",
+    "content-hash": "9313d029a5d0a8b397997d6363e67a2c",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1898,6 +1898,57 @@
                 "source": "https://github.com/phpstan/phpdoc-parser/tree/1.16.1"
             },
             "time": "2023-02-07T18:11:17+00:00"
+        },
+        {
+            "name": "pixelant/pxa-lpeh",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pixelant/pxa_lpeh.git",
+                "reference": "b1b19bd6a07d8b26b014639fc7953c8fc44981e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pixelant/pxa_lpeh/zipball/b1b19bd6a07d8b26b014639fc7953c8fc44981e1",
+                "reference": "b1b19bd6a07d8b26b014639fc7953c8fc44981e1",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^9.5 || ^10.1 || ^11.5"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "pxa_lpeh"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pixelant\\PxaLpeh\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Pixelant",
+                    "email": "info@pixelant.net",
+                    "homepage": "https://www.pixelant.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Speeds up error page handling and frees up PHP workers by loading local page content without issuing an external HTTP request.",
+            "homepage": "https://github.com/pixelant/pxa_lpeh",
+            "keywords": [
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/pixelant/pxa_lpeh/issues",
+                "source": "https://github.com/pixelant/pxa_lpeh/tree/v1.1.1"
+            },
+            "time": "2022-12-05T07:42:16+00:00"
         },
         {
             "name": "platformsh/config-reader",
@@ -7539,8 +7590,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "platform-overrides": {
-        "php": "7.4.1"
-    },
     "plugin-api-version": "2.3.0"
 }
