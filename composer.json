@@ -7,9 +7,6 @@
 			"typo3/class-alias-loader": true,
 			"typo3/cms-composer-installers": true
 		},
-		"platform": {
-			"php": "7.4.1"
-		},
 		"sort-packages": true
 	},
 	"require": {

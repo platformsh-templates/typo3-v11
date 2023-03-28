@@ -33,9 +33,7 @@ fi
 # This file is created by the installer previously and is deleted by the installer later, once the installation is
 # fully complete during deploy (when we have access to the db), but it won't be able to since it's in a read-only
 # location so we'll take care of it now
-echo "Checking FIRST_INSTALL."
 if [ -f "${PLATFORM_APP_DIR}/public/FIRST_INSTALL" ]; then
-  echo "Removing FIRST_INSTALL"
   rm "${PLATFORM_APP_DIR}/public/FIRST_INSTALL"
 fi
 
