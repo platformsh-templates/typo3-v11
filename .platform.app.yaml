@@ -132,7 +132,7 @@ hooks:
     build: |
         # Exit hook immediately if a command exits with a non-zero status.
         set -e
-
+        echo "modifiy the build"
         bash ./.platform-scripts/build.sh
 
     # The deploy hook runs after your application has been deployed and started.
