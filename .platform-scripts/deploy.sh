@@ -46,5 +46,11 @@ fi
 
 # Now set up all extensions that may have been added via composer (build step) but not set up yet (db-related)
 composer exec typo3cms install:extensionsetupifpossible
+
 # per simon.gilli@typo3.org and soren.malling@gmail.com add cache warmup at end of deploy hook
 composer exec typo3 cache:warmup
+
+# Check if they've set an env var for ENABLE_INSTALL_TOOL, and if so, make sure we've created it in the ${varPath} directory.
+if [[ -n ${TYPO3_ENABLE_INSTALL_TOOL+x} ]]; then
+  touch "${PLATFORM_APP_DIR}/${varPath}/ENABLE_INSTALL_TOOL"
+fi
