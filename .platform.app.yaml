@@ -17,6 +17,7 @@ runtime:
     # Enable the redis extension so TYPO3 can communicate with the Redis cache.
     extensions:
         - redis
+        - webp
 
 # Composer build tasks run prior to build hook, which runs
 # composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader
