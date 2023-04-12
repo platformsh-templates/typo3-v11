@@ -1,7 +1,7 @@
 # TYPO3 for Platform.sh
 
 <p align="center">
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/typo3/.platform.template.yaml&utm_content=typo3&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/typo3-v11/.platform.template.yaml&utm_content=typo3&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
     <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" />
 </a>
 </p>
@@ -20,11 +20,11 @@ TYPO3 is a Content Management System (CMS) built in PHP.
 
 ## Post-install
 
-1. The first time the site is deployed, the TYPO3 console will initialize the database and create an initial user.  It will not run again unless the `installer/.platform.installed` is removed.  (Do not remove that file unless you want the installer to run on the next deploy!)
+1. The first time the site is deployed, the TYPO3 console will initialize the database and create an initial user.  It will not run again unless the `var/platformsh.installed` is removed.  (Do not remove that file unless you want the installer to run on the next deploy!)
 
 2. The installer will create an administrator account with username/password `admin`/`password`.  **You need to change this password immediately. Not doing so is a security risk**.
 
-3. Enable the `pixelant/pxa-lpeh` plugin.  It is already installed by default but must be enabled manually.  This plugin changes TYPO3's 403/404 page handling to avoid a self-request HTTP request that can cause a race condition and deadlocks in some situations. See the [TYPO3 documentation](https://docs.platform.sh/frameworks/typo3.html#avoiding-deadlock) for more information.
+3. Connect to the application [via SSH](https://docs.platform.sh/development/ssh.html) and run `./vendor/bin/typo3 extension:setup` to finish setting up the installed extensions.
 
 ## Customizations
 
