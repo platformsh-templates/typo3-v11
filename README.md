@@ -1,10 +1,10 @@
 # TYPO3 for Platform.sh
 
-<p align="center">
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/typo3-v11/.platform.template.yaml&utm_content=typo3&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
-    <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" />
-</a>
-</p>
+## Archived template
+
+This template has been archived. You can still use it as a reference, but it is no longer receiving regular updates from our team.
+
+## Typo3
 
 This template builds the TYPO3 CMS for Platform.sh.  It comes pre-configured with MariaDB for storage and Redis for caching.  A command line installer will automatically initialize the site on first deploy.
 
